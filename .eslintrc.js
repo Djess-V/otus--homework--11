@@ -26,9 +26,11 @@ module.exports = {
     "@typescript-eslint/no-var-requires": "off",
     "no-void": "off",
     "no-extend-native": ["error", { exceptions: ["Function"] }],
-    "one-var": ["error", "consecutive"],
+    "one-var": "off",
     "no-else-return": "off",
     "no-promise-executor-return": "off",
     "arrow-body-style": "off",
+    "no-param-reassign": "off",
+    "no-use-before-define": "off",
   },
 };
