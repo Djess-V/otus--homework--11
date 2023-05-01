@@ -1,0 +1,159 @@
+@import "./fonts/gilroy-bold.css";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy-Bold";
+}
+
+body {
+  background-color: rgb(208, 207, 207);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin: 10px auto;
+  width: 98%;
+  background-color: cadetblue;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+@media (min-width: 700px) {
+  .wrapper {
+    align-items: center;
+  }
+}
+
+._button {
+  margin: 20px auto;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: rgb(32, 151, 178);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+._button:hover {
+  background-color: rgb(28, 139, 164);
+}
+
+.wrapper__title {
+  text-align: center;
+}
+
+@media (max-width: 350px) {
+  .wrapper__title {
+    font-size: 32px;
+  }
+}
+
+.wrapper__section {
+  margin-top: 20px;
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  .wrapper__section {
+    width: 80%;
+  }
+}
+
+.section__term {
+  margin: 20px 0;
+}
+
+.section__coord {
+  outline: none;
+  height: 35px;
+  width: 70px;
+  border-radius: 3px;
+  border: none;
+  box-shadow: 0 0 2px 1px rgb(217, 211, 211);
+  transition: all 0.5s ease-in-out;
+  padding: 5px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+}
+
+.section__coord:hover {
+  transform: scale(1.05);
+}
+
+@media (max-width: 400px) {
+  .section__coord {
+    font-size: 0.8rem;
+  }
+}
+
+.section__error-message {
+  opacity: 0;
+  color: rgb(152, 30, 30);
+  margin-bottom: 5px;
+}
+
+.section__range {
+  width: 200px;
+  margin: 0;
+}
+
+.section__datalist {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  writing-mode: vertical-lr;
+  width: 200px;
+}
+
+option {
+  padding: 0;
+}
+
+.row__cell {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .row__cell {
+    width: 13px;
+    height: 13px;
+  }
+}
+
+@media (min-width: 700px) {
+  .row__cell {
+    height: 1rem;
+    width: 1rem;
+  }
+}
+
+.row__cell_type_alive {
+  background-color: #be3631;
+}
+
+.row__cell_type_doomed {
+  background-color: #e88b88;
+}
+
+.row__cell_type_dead {
+  background-color: #ffffff;
+}
+
+.game__button_type_start-stop {
+  opacity: 0;
+}
+
+.game__message {
+  color: rgb(168, 199, 26);
+  opacity: 0;
+}
+
+.section__game {
+  margin-top: 10px;
+}
